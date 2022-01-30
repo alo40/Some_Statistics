@@ -1,5 +1,3 @@
-print("is working!")
-
 from scipy.stats import bernoulli
 from random import choices
 from numpy import mean
