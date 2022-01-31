@@ -24,11 +24,12 @@ S = a*X + b
 # C = choices(S,k=k)
 # M = sum(C)
 means = [sum(choices(S,k=k)) for i in range(n)]
+_mean = mean(means)
 
-# plot hist
-plt.hist(means, bins="auto")
-plt.xlim(-200,800,50)
-plt.title("%d samples of size %d from a population of %d (with p = %.2f)" % (n, k, size, p))
-plt.show()
+# # plot hist
+# plt.hist(means, bins="auto")
+# plt.xlim(-200,800,50)
+# plt.title("%d samples of size %d from a population of %d (with p = %.2f)" % (n, k, size, p))
+# plt.show()
 
 print("finish")
